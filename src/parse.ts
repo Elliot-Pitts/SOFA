@@ -17,11 +17,11 @@ export function parseVariable({
   variable: VariableDefinitionNode;
   schema: GraphQLSchema;
 }) {
-  if (value !== undefined || value !== null) {
+  if (value !== undefined && value !== null) {
     return resolveVariable({
-        value,
-        type: variable.type,
-        schema,
+      value,
+      type: variable.type,
+      schema,
     });
   }
   return;

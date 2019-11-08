@@ -1,0 +1,1 @@
+{"version":3,"file":"common.js","sourceRoot":"","sources":["../src/common.ts"],"names":[],"mappings":";;AAAA,0CAA0C;AAE1C,SAAgB,WAAW,CAAC,IAAY;IACtC,OAAO,UAAU,CAAC,KAAK,CAAC,IAAI,CAAC,CAAC;AAChC,CAAC;AAFD,kCAEC","sourcesContent":["import * as changeCase from 'change-case';\n\nexport function convertName(name: string) {\n  return changeCase.param(name);\n}\n"]}
